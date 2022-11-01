@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="search">
+            <div class="chat_search">
+                <form id="searchForm" >
+                    <input type="text" id="text" class="chat_text">
+                    <button type="submit" id="search" class="chat_button">search</button>
+                </form>
+            </div>
+            <div class="chat_reset">
+                <form id="resetForm" >
+                    <button type="submit" id="reset" class="chat_button">reset</button> 
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="chat">
+        <h1>Hello Chat</h1>
+        <form id="chatForm">
+            <label>author
+                <input type="text" id="author" class="chat_author">
+            </label>
+            <label>message
+                <textarea id="message" class="chat_message"></textarea>
+            </label>
+            <button type="submit" id="sendMessage" class="chat_button">send</button>
+        </form>
+        <table id="list" class="list">
+        
+        </table>
+    </div>
+    <script src="js/chat.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arial",sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding:50px;
+    
+}
+
+
+
+  .chat_button{
+        background-color:rgb(41, 41, 131);
+        border-radius:18px;
+        border:1px solid rgb(41, 41, 131);
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        padding:1px 22px;
+        text-decoration:none;
+    }
+    .chat_button:hover {
+        background-color:#737af1;
+    }
+    .chat_button:active {
+        position:relative;
+        top:1px;
+    }
+    
+    .chat_author{
+        border-radius: 50px;
+        padding:1px 22px;
+        
+    }
+
+    .chat_text{
+        border-radius: 50px;
+        padding:1px 22px;
+    }
+
+    .chat_search{
+        width:30%;
+        float:left;
+    }
+    .chat_reset{
+        width:30%;
+        float:left;
+    }
+
+    .chat_message{
+        
+        border-radius: 10px;
+       
+       
+    }
+
+    ul{
+        padding:50px;
+        list-style: none;
+        
+    } 
+
+    .list_author{
+        margin:20px;
+        padding:35px;
+        background-color:rgb(136, 136, 238);
+        border-radius:50%;
+        border:1px solid rgb(136, 136, 238);
+        width:5%;
+        height: auto;
+        
+    }
+  
+    .list_message{
+              
+        border-radius:20px;
+        border:1px solid rgb(136, 136, 238);
+        width:20%;
+        text-align:center;
+        height: auto;
+        
+        
+    
+    }
+
+    .search, .chat{
+        margin:50px;
+        border:1px solid red;
+        padding:50px;
+        border-radius: 10px;
+        background-color: beige;
+    }
+
+    .list{
+        table-layout: fixed;
+        width:60%;
+        margin:20px;
+        border-spacing: 10px;
+    }
+    
