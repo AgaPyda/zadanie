@@ -22,16 +22,16 @@ const handleButtonsearch=document.querySelector("#search");
 
 const handleResetForm=document.querySelector("#resetForm");
 
-//const tab =[];
+const tab =[];
 
-let tab = JSON.parse(localStorage.getItem('tabel'));
+ let tab1 = JSON.parse(localStorage.getItem('tabel'));
 
-if(tab === null) {
+ if(tab === null) {
   tab = [];
-}
+ }
 
 handleList.innerHTML="";
-tab.forEach((element) => {
+tab1.forEach((element) => {
     handleList.innerHTML+=`<tr><td class="list_author">${element.author}</td><td class="list_message">${element.message}</td></tr>`;
 });
 
@@ -41,7 +41,10 @@ const sendMessage=(event)=>{
     const message=document.querySelector("#message").value;
     const text={author: `${author}`,message:`${message}`};
     //zapis ostatniego elementu do tablicy
+
+    const tab = JSON.parse(localStorage.getItem('tabel'));
     tab.push(text);
+    console.log(tab);
     //zapis tablicy do localStorage
     localStorage.setItem('tabel',JSON.stringify(tab));
 
